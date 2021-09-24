@@ -20,6 +20,13 @@ public class AddressBook {
         }
     }
 
+    public void lonely(){
+        int len = this.buddies.size();
+        for(int i = 0; i < len; i++){
+            this.buddies.remove(0);
+        }
+    }
+
     public static void main(String[] args) {
         BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
         BuddyInfo buddy2 = new BuddyInfo("Tim", "Carleton", "613");
